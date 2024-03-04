@@ -8,70 +8,62 @@
 }
 
 
+
 .navbar-brand img{
     height: 60px;
 }
 
-.jumbotron{
-    height: 800px;
-    background-position: center;
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    .header p {
+        font-size: 1.2em;
+    }
+}
+
+.header {
     background-image: url(./Imagenes/IMG-20220110-WA0051~2.jpeg);
-    text-align: left;
-    font-weight: bold;
-}
-
-.jumbotron h1{
+    background-size: cover;
+    background-position: center;
     color: white;
-    text-shadow: 0 0 10px #000;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-}
-.jumbotron p{
-    color: white;
-    text-shadow: 0 0 10px #000;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    padding: 100px 0;
 }
 
-
-.boton1{
-    position: absolute;
-    top: 55%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.boton2{
-    position: absolute;
-    top: 55%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.header h1 {
+    font-size: 3em;
+    text-shadow: 0 0 20px black;
+}
+
+.header p {
+    font-size: 1.5em;
+    text-shadow: 0 0 20px black;
 }
 
 h2{
     color: white;
     text-align: center;
+    text-shadow: 0 0 5px #000;
     background-color: darkgray;
     padding: 20px;
     font-weight: bold;
-    text-shadow: 0 0 5px #000;
 }
 
-.ParrafoH2 p{
-    color: darkblue;
-    padding: 10px;
+.parrafoh2{
+    margin: 0;
+    padding: 20px;
+    background-color: lightgray;
+    font-size: large;
     text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 5px;
+
 }
+
 
 .container {
     display: flex;
@@ -82,23 +74,120 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px; /* Espacio entre las dos secciones */
+    margin: 0 10px; 
+}
+
+.foto2{
+    height: 310px;
 }
 
 .derecha{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px; /* Espacio entre las dos secciones */
+    margin: 0 10px; 
 }
 
 img {
     height: auto;
     width: 100%;
-    margin-bottom: 10px; /* Espacio entre las imágenes */
+    margin-bottom: 10px;
 }
 
-.foto2{
-    width: 100%;
-    height: 500px;
+.jumbotron2{
+    height: 100px;
+    background-position: center;
+    text-align: left;
+    font-weight: bold;
+}
+
+.jumbotron2 h2 p{
+    font-weight: bold;
+    text-shadow: 0 0 5px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: lightseagreen;
+    font-size: 24px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+
+footer{
+    text-align: center;
+    background-color: #333;
+}
+
+.logoft{
+    padding: 15px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div p{
+    text-align: left;
+    color: #fff;
+}
+
+footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer div img{
+    color: #fff;
+}
+
+.copyright{
+    color: white !important;
+    text-align: center;
+    margin: 16px;
+}
+
+.politica{
+    display: inline-block;
+    text-align: right;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .redes {
+        flex-direction: column;
+    }
 }
