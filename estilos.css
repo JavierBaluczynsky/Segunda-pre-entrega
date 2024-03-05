@@ -19,24 +19,13 @@
     background-position: center;
     color: white;
     text-align: center;
+    text-shadow: 0 0 15px #000;
     padding: 100px 0;
 }
 
 .header-content {
     max-width: 800px;
     margin: 0 auto;
-}
-
-.header h1 {
-    margin: 10px;
-    font-size: 2.0em;
-    text-shadow: 0 0 20px black;
-}
-
-.header p {
-    margin: 10px;
-    font-size: 0.9em;
-    text-shadow: 0 0 20px black;
 }
 
 h2{
@@ -196,15 +185,85 @@ footer div img{
 }
 
 .empleado {
-    width: calc(50% - 10px); /* Ancho de la tarjeta, menos el espacio entre ellas */
-    /* margin-bottom: 20px; */
+    width: calc(50% - 10px);
     background-color: #f0f0f0;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .empleado img {
-    width: 50%; /* Ajusta la imagen al 100% del ancho de su contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 50%;
+    height: auto;
 }
+
+/* Sitios */
+
+.col-md-6{
+    text-align: left;
+    padding: 15px;
+}
+
+/* Viajes */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foto {
+    flex: 1 1 auto;
+    margin-bottom: 10px;
+}
+
+.foto-grande {
+    flex-basis: calc(50% - 10px);
+    border: 2px;
+    padding: 5px;
+}
+
+.foto-mediana {
+    flex-basis: calc(33.33% - 10px);
+    border: 2px;
+    padding: 5px;
+}
+
+.foto-pequena {
+    flex-basis: calc(25% - 10px);
+    border: 2px;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .foto {
+        flex-basis: calc(50% - 10px);
+        border: 2px;
+        padding: 5px;
+    }
+}
+
+.titulo {
+    font-size: 2em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo {
+        font-size: 1.2em;
+    }
+}
+
+/* Contacto */
+
+.contacto-titulo{
+    padding: 5px;
+    text-align: center;
+}
+
 

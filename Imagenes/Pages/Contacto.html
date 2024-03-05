@@ -44,28 +44,36 @@
         <section class="contacto-titulo">
             <h1>Contacto</h1>
             <p>Por cualquier tipo de comentarios, nos podes escribir acá!</p>
-        </section>
-        <br><br><br><br>
-        <section>
-            <form action="enviar.php" method="post" enctype="text/plain">
-                <label for="nombre">Nombre</label>
-                <input type="text">
-        </section>
-        <section>
-            <label for="email">Email</label>
-            <input type="text">
-        </section><br>
-        <section>
-            <label for="comentarios">Comentarios</label>
-        </section>
-        <section>
-            <textarea name="" id="" cols="120" rows="10"></textarea><br>
-            <input type="checkbox" id="terminos" name="terminos" required>
-            <label for="terminos">Acepto los terminos y condiciones.</label><br>
-            </form>
-        </section>
-        <input type="submit">
-    </main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comentarios">Comentarios</label>
+                                <textarea class="form-control" id="comentarios" rows="3" placeholder="Ingrese sus comentarios"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="terminos" required>
+                                <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../Logo RC.jpg" class="img-fluid" alt="LogorutasC">
+                    </div>
+                </div>
+            </div>
+            
+            
     <footer>
         <div class="logoft">
             <img src="#" alt="Rutas Costeras">
