@@ -46,7 +46,6 @@ h2{
 
 }
 
-
 .container {
     display: flex;
     justify-content: center;
@@ -127,6 +126,7 @@ footer{
     width: 100%;
     text-align: center;
     background-color: #333;
+    /* border: 5px solid red; */
 }
 
 .logoft{
@@ -147,11 +147,6 @@ footer ul li{
     list-style: none;
     display: inline-block;
     margin-right: 30px;
-}
-
-footer a{
-    text-decoration: none;
-    color: #fff;
 }
 
 footer div img{
@@ -220,18 +215,25 @@ footer div img{
     flex-basis: calc(50% - 10px);
     border: 2px;
     padding: 5px;
+    border: 5px solid black;
 }
 
 .foto-mediana {
     flex-basis: calc(33.33% - 10px);
     border: 2px;
     padding: 5px;
+    border: 5px solid black;
 }
 
 .foto-pequena {
     flex-basis: calc(25% - 10px);
     border: 2px;
     padding: 5px;
+    border: 5px solid black;
+}
+
+.foto-pequena:hover{
+    filter: grayscale(100%);
 }
 
 @media (max-width: 768px) {
